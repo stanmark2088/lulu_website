@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+
+    <div class="d-flex justify-content-center text-black-50 font-weight bold">
+    <form class="d-flex flex-column w-25 bg-light shadow p-5 mt-5 border rounded" method="POST" action="{{url_for('register')}}">
+        <div class="form-group">
+    <label for="exampleFormControlTextarea1"><h4>Write to Lulu</h4></label>
+    <textarea class="border rounded form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+     <input type="submit" class="btn btn-primary btl-lg" value="Send message">
+    </form>
+</div>
+
+{% endblock %}
